@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body {
+            background-color: rgb(68, 67, 67);
+            position: relative;
+        }
+
+        
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(191, 49, 49);
+            color: white;
+            height: 120px;
+            text-align: center;
+            padding-top: 60px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+        
+        }
+
+        div {
+            
+            background-color: rgb(163, 112, 112);
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 20px;
+            border-radius: 20px;
+            
+        }
+        input {
+            width: 50px;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            
+            
+        }
+
+        span.material-symbols-outlined {
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        input#caixa02 {
+            padding-right: 10px;
+            padding-bottom: 30px;
+            margin-left: 120px;
+            width: 50%;
+            position: absolute;
+            background-color: white;
+            height: 10px;
+            padding: 20px;
+            padding-top: 5px;
+            
+
+        }
+
+        div#resul {
+
+            display: block;
+            position: relative;
+            margin-left: 120px;
+            width: 50%;
+            position: absolute;
+            background-color: white;
+            height: 20px;
+            padding: 20px;
+            padding-top: 5px;
+            
+        }
+
+        input#resul {
+            text-align: center;
+            width: 100px;
+            
+            
+        }
+        input#multi {
+            display: block;
+            width: 150px;
+        }
+
+        div#caixa {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-top: 100px;
+            margin-left: 100px;
+            line-height: 180px;
+            
+           
+
+        }
+        
+
+    </style>
+</head>
+<body>
+        <h1>Calculadora</h1>
+    <main> 
+            <input type="number" name="caixa1" id="caixa1" placeholder="Digite o 1 numero">
+             <span class="material-symbols-outlined">
+            add
+            </span>
+            <input type="number" name="caixa2" id="caixa2" placeholder="Digite o 2 numero">
+             <input id="resul" type="button" value="RESULTADO" onclick="somar()"> 
+             <input id="multi" type="button" value="Multiplicar" onmousedown="multiplicar()">
+
+             <div id="resul" onmouseenter="entrar()" onmouseout="sair()"> RESULTADO</div>
+
+             <div id="caixa" onmouseenter="entrar()" onmouseout="sair()" onclick="click()"> Clique aqui</div>
+            
+    </main>
+
+    <script>
+        var a = window.document.getElementById('caixa')
+
+        function entrar() {
+            a.innerText ='Você esta com o mouse dentro'
+        }
+
+        function clicar() {
+            caixa.innerText='Clicou'
+        }
+        
+
+        function  multiplicar() {
+             var a = document.querySelector('input#multi') 
+             a.innerHTML='https://pabloh2022.github.io/Projeto-Minhas-redes-sociais/'  
+        }
+        function entrar() {
+            let msg = window.document.querySelector('div#resul')
+            msg.innerText='Digite os valores acima para saber o resultado'
+
+        }
+
+        function sair() {
+
+            var sair = document.getElementById('resul')
+            sair.innerText ='Saiu'
+        }
+
+
+        function somar() {
+
+                let caixa1 = window.document.querySelector('input#caixa1')
+                let caixa2 = window.document.querySelector('input#caixa2')
+                let resul = window.document.query9Selector('div#resul')
+                let cx1 = Number(caixa1.value)
+                let cx2 = Number(caixa2.value)
+                let soma = cx1 + cx2
+                resul.innerText = ('O Valor da soma ente ' + cx1 + '+' + cx2 + ' é igual a ' + soma)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio do Pais</title>
+</head>
+<body>
+        <fieldset>
+        <legend> Pais</legend>
+        <input type="text" name="est" id="est">
+        <input onclick="salvar()" id="salvar" type="button" value="salvar">
+    </fieldset>
+    <div id="escreva"></div>
+    <script>
+        
+    
+        function salvar() {
+            var caixa = window.document.querySelector('input#est')
+            var res = window.document.querySelector('div#escreva')
+            var pais = (caixa.value)
+            res.innerText = 'Atualmente estou morando em'
+            if (pais == 'Brasil') {
+                res.innerText += 'Você é Brasileiro(a)'
+            } else {
+                res.innerText += 'Você é estrangeiro'
+            }
+    }
+        
+
+    </script>
+</body>
+</html>
