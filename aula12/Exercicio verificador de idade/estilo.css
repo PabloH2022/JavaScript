@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(54, 88, 239);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    color: white;
+}
+section {
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.443);
+    
+}
+p {
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-top: 50px;
+    
+}
+p#sexo {
+    padding-top: 0px;
+}
+input#verificar {
+    margin-left: 10px;
+    
+}
+
+div#res {
+    margin:10px;
+    padding-bottom: 10px;
+
+
+}
+footer {
+    text-align: center;
+    color: white;
+}
+
