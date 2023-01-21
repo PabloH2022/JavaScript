@@ -12,3 +12,4 @@ if (pos == -1) {
 } else {
     console.log('O valor esta na posição ' +pos)
 }
+
