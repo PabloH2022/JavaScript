@@ -44,6 +44,9 @@ select#flista {
 input#finalizar{
     margin-top: 10px;
 }
+div#res {
+    text-align: left;
+}
 footer {
     text-align: center;
     color: white;
