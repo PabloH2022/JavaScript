@@ -1,35 +1,39 @@
-    let valor = document.getElementById('txtc')
-    let resp = document.getElementById('resposta')
-    let numero = []
-    numero.push(valor.value)
+let num = document.getElementById('txtc')
+let lista = document.getElementsByTagName('flista')
+let res = document.getElementById('res')
+let valores = []
+
+function inNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+function inLista(n, l) {
+    if(l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
 
 function adicionar() {
-    
-     if (valor.value.length == 0) {
-        window.alert('[ERRO] existem campos vazios!')
-     } else {
-        for(let pos in numero) {
-            resp.innerHTML = (pos[numero[0]])
-        }
-        
-        for(let pos = 0; pos<numero.length; pos++) {
-            resp.innerHTML = ('O Valor ' +numero[pos]+ ' Foi adicionado')
-        } 
-        return numeros
-    } 
-    
-        
 
-
+    if (inNumero(num.value) &&  !inLista(num.value, valores)) {
         
-       
-    
-    
+        valores.push(Number(num.value))
+
+        let item = document.createElement('option')
+        item.text = ('O valor '+(num.value)+ ' Adicionado')
+        lista.appendChild(item)
+
+    } else {
+        window.alert('Valor inválido ou já encontrado na Lista!')
+    }
+
 }
-function finalizar() {
-    let resumo = window.document.getElementById('resulgeral')
-    resumo.innerHTML = 'Varios valores adicionados'
-    
-}
-
-

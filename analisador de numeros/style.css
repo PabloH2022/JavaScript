@@ -26,29 +26,9 @@ section {
    
 }
 
+
 input#txtc {
     width: 100px;
-}
-section#resposta {
-    font-size: 0.8em;
-    margin: 0px;
-    width: 200px;
-    box-shadow: 0px 0px 0px;
-    border: 1px solid black;
-    margin-top: 10px;
-    height: auto;
-    padding: 10px;
-    border-radius: 0px 0px 0px;
-    
-    
-    
-}
-section#resposta:hover {
-    background-color:#236673;
-    transition: 0.5s;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.676);
-    border-radius: 5px;
 }
 div {
     text-align: center;
@@ -57,6 +37,9 @@ div#msg {
     text-align: center;
     padding-bottom: 20px;
 
+}
+select#flista {
+    width: 150px;
 }
 input#finalizar{
     margin-top: 10px;

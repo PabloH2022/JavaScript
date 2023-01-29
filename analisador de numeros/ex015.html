@@ -7,23 +7,21 @@
     <title> Exercicio do horario </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
         <h1> Analisador de Números</h1>
     </header>
         <section>
-        <label for="txtc">Numero (entre 1 - 100): </label>
+        <label for="txtc">Numero (entre 1 - 100) </label>
         <input type="number" name="txtc" id="txtc">
-        <input type="button" value="Adicionar" onclick="adicionar()">
-        <section id="resposta" >
-            
-        </section>
-            
+        <input type="button" value="Adicionar" onclick="adicionar()"> <br>
+        
+        <select name="flista" id="flista" size="7"></select> <br>  
         <input id="finalizar" type="button" value="Finalizar" onclick="finalizar()">
-        <div id="resulgeral" >
-            
-        </div>
         </section>
+        <div id="res" >
+
+        </div>
            
     <footer>
         <p>&copy; Pablo Henrique </p>
