@@ -160,6 +160,9 @@ input#adicionar {
     font-size: 1.5em;
     color: #f76206;
  }
+ div#caixabilhete > p {
+    margin-top: 11px;
+ }
 input#adição {
     background-color: #f76206;
     border: none;
