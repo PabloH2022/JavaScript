@@ -13,8 +13,17 @@ header {
     background-color: #7BBEDB;
     height: 50px;
     color: #d1dee3;
+    display: flex;
 
 
+
+}
+input#pesq {
+    text-align: center;
+    margin-left: 60px;
+    border: 2px solid #f76206;
+    border-radius: 5px;
+    width: 200px;
 
 }
 header, h1#titulo {
@@ -39,6 +48,8 @@ div#foto > h3 {
 }
 div#foto > img#img {
     margin-top: 20px;
+    margin-left: 110px;
+    
     
 }
 div#valorbilhete {
