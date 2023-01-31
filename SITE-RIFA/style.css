@@ -42,7 +42,7 @@ div#foto > img#img {
     
 }
 div#valorbilhete {
-    background-color: #E47632 ;
+    background-color:#f76206 ;
     height: 60px;
     margin-top: 30px;
     border-radius: 15px;
@@ -91,13 +91,12 @@ div#caixaop {
     margin-top: 20px;
     margin-left: 10px;
     height: 115px;
-    width: 150px;
-    border: #E47632;
+    width: 185px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid #E47632;
+    border: 2px solid #f76206;
     border-radius: 10px;
     display: inline-block;
-    margin-left: 35px;
+    
 }
 div#caixaop > h1 {
     text-align: center;
@@ -109,31 +108,44 @@ div#caixaop > h1 {
     
 }
 input#adicionar {
-    background-color: #E47632;
+    background-color: #f76206;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 39px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 10px;
-    margin-left: 10px;
+    border-radius: 7px;
+    margin-left: 25px;
     margin-bottom: 10px;
  }
 
  div#mostrar > input {
-    margin-top: 30px;
+    margin-top: 0px;
     display: inline-block;
     
  }
  div#caixabilhete {
+
     border: 2px solid #E47632;
-    height: 40px;
+    height: 50px;
     width: 200px;
     display: inline-block;
-    
+    border-radius: 8px;
+    margin-top: 50px;
     
     
  }
+input#adição {
+    background-color: #f76206;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 7px;
+    
+    
+}
 
