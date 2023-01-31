@@ -178,7 +178,7 @@ input#adição {
 }
 div#resultado {
     color: rgb(126, 125, 125);
-    height: 150px;
+    height: 80px;
     width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -190,9 +190,18 @@ div#resultado {
     padding-top: 10px;
 }
 
-input#finalizar {
-    padding: 15px 32px;
+div#finalizar {
+    background-color: rgb(24, 123, 210);
+    color: rgb(126, 125, 125);
+    height: 80px;
+    width: 94vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    
     display: block;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 footer {
