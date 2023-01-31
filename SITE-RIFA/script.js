@@ -47,12 +47,7 @@ function adicionar100() {
 
 var resul = document.addEventListener('click', function() {
 
-    if(resultado.style.display === "none" ) {
-        resultado.style.display = "block"
-    } else {
-        resultado.style.display = "none"
-       
-    }
+    
     
 
     resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')

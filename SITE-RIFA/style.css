@@ -177,7 +177,7 @@ input#adição {
     
 }
 div#resultado {
-    color: rgb(79, 78, 78);
+    color: rgb(126, 125, 125);
     height: 150px;
     width: 94vw;
     background-color: rgb(255, 255, 255);
@@ -198,7 +198,7 @@ input#finalizar {
 footer {
     height: 100px;
     text-align: center;
-    border-top: 2px solid rgba(71, 70, 70, 0.532);
+    border-top: 2px solid rgba(109, 109, 109, 0.355);
     margin-top: 30px;
     background-color: white;
 
