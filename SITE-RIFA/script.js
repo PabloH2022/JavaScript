@@ -2,6 +2,7 @@ let res = window.document.getElementById('caixabilhete')
 let inicio = Number(res.value)
 let numero = 0
 let resultado = document.getElementById('resultado')
+let finalizar = document.getElementById('finalizar')
 
 
 function mais() {
@@ -44,23 +45,24 @@ function adicionar100() {
 }
 
 
-
-
-
 var resul = document.addEventListener('click', function() {
 
-
-    if(resultado.style.display === "none" || inicio > 0) {
+    if(resultado.style.display === "none" ) {
         resultado.style.display = "block"
     } else {
         resultado.style.display = "none"
        
     }
+    
+
     resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
     let soma = numero * 0.25
     resultado.innerHTML += ('Por: R$ '+soma)
+    
+
 
 
 })
+
 
 
