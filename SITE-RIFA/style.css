@@ -75,13 +75,15 @@ div#data > p {
     padding: 24px;
 }
 div#adicionar {
-    height: 500px;
+    height: 470px;
     width: 90vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+    text-align: center;
+    
 }
 div#adicionar > p {
     text-align: center;
@@ -89,15 +91,12 @@ div#adicionar > p {
 }
 div#caixaop {
     margin-top: 20px;
-    
     height: 115px;
     width: 160px;
     background-color: rgb(255, 255, 255);
     border: 2px solid #f76206;
     border-radius: 10px;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     
     
     
@@ -121,7 +120,6 @@ input#adicionar {
     display: inline-block;
     font-size: 16px;
     border-radius: 7px;
-    margin-left: 10px;
     margin-bottom: 10px;
  }
 
@@ -152,5 +150,26 @@ input#adição {
     border-radius: 7px;
     
     
+}
+div#finalizar {
+    height: 200px;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.532);
+    margin-top: 30px;
+
+}
+footer > p {
+    margin-top: 30px;
+    font-size: 0.9em;
 }
 
