@@ -28,6 +28,7 @@ div#pesq {
     border-radius: 5px;
     width: 200px;
     background-color: white;
+    
 
 
 }
@@ -43,12 +44,12 @@ header, h1#titulo {
 }
 div#foto {
     height: 640px;
-    width: 90vw;
+    width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.303);
     
 }
 div#foto > h3 {
@@ -79,7 +80,7 @@ div#local {
     margin-left: 10px;
     background-color:#dedef45c ;
     height: 80px;
-    width: 85vw;
+    width: 90vw;
     border-color: black;
 }
 div#local > p {
@@ -90,19 +91,19 @@ div#data {
     margin-left: 10px;
     background-color:#dedef45c ;
     height: 80px;
-    width: 85vw;
+    width: 90vw;
 }
 div#data > p {
     padding: 24px;
 }
 div#adicionar {
     height: 470px;
-    width: 90vw;
+    width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.303);
     text-align: center;
     
 }
@@ -175,20 +176,27 @@ input#adição {
     
     
 }
-div#finalizar {
-    height: 200px;
-    width: 90vw;
+div#resultado {
+    color: rgb(79, 78, 78);
+    height: 150px;
+    width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+    display: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+input#finalizar {
+    padding: 15px 32px;
 }
 
 footer {
     height: 100px;
     text-align: center;
-    border-top: 2px solid rgba(128, 128, 128, 0.532);
+    border-top: 2px solid rgba(71, 70, 70, 0.532);
     margin-top: 30px;
     background-color: white;
 

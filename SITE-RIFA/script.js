@@ -1,11 +1,15 @@
 let res = window.document.getElementById('caixabilhete')
+let inicio = Number(res.value)
 let numero = 0
-let display = document.getElementById('finalizar').style.display = "none"
+let resultado = document.getElementById('resultado')
+
 
 function mais() {
     numero = numero + 1
     res.innerHTML = numero
-    res.innerHTML = style.display = "none"
+    res.innerHTML = style.display = "block"
+   
+    
 
 }
 function menos() {
@@ -16,29 +20,47 @@ function menos() {
         res.innerHTML = numero
     }  
 
-}
 
+}
 function adicionar1() {
     numero = numero + 1
     res.innerHTML = numero
-}
 
+}
 function adicionar30() {
      numero = numero + 30
      res.innerHTML = numero
     
-     
 }
 function adicionar50() {
     numero = numero + 50
     res.innerHTML = numero
-}
 
+}
 function adicionar100() {
     numero = numero + 100
     res.innerHTML = numero
+
 }
 
-function finalizar() {
-    
-}
+
+
+
+
+var resul = document.addEventListener('click', function() {
+
+
+    if(resultado.style.display === "none" || inicio > 0) {
+        resultado.style.display = "block"
+    } else {
+        resultado.style.display = "none"
+       
+    }
+    resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
+    let soma = numero * 0.25
+    resultado.innerHTML += ('Por: R$ '+soma)
+
+
+})
+
+
