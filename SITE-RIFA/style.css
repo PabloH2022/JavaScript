@@ -90,18 +90,22 @@ div#adicionar > p {
 div#caixaop {
     margin-top: 20px;
     margin-left: 10px;
-    height: 150px;
-    width: 180px;
+    height: 115px;
+    width: 150px;
     border: #E47632;
     background-color: rgb(255, 255, 255);
     border: 2px solid #E47632;
     border-radius: 10px;
     display: inline-block;
+    margin-left: 35px;
 }
 div#caixaop > h1 {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color: #E47632;
+    padding-bottom: 8px;
+    padding-top: 10px;
+
     
 }
 input#adicionar {
@@ -114,7 +118,7 @@ input#adicionar {
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    margin-left: 25px;
+    margin-left: 10px;
     margin-bottom: 10px;
  }
 
