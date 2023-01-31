@@ -58,6 +58,7 @@ div#foto > h3 {
 div#foto > img#img {
     margin-top: 20px;
     margin-left: 100px;
+    border-radius: 10px;
     
     
 }

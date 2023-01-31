@@ -1,6 +1,6 @@
 let res = window.document.getElementById('caixabilhete')
 let numero = 0
-let display = document.getElementById('finalizar').style.display
+let display = document.getElementById('finalizar').style.display = "none"
 
 function mais() {
     numero = numero + 1
