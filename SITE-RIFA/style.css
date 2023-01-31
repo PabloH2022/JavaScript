@@ -89,13 +89,16 @@ div#adicionar > p {
 }
 div#caixaop {
     margin-top: 20px;
-    margin-left: 25px;
+    
     height: 115px;
     width: 160px;
     background-color: rgb(255, 255, 255);
     border: 2px solid #f76206;
     border-radius: 10px;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
     
     
 }
@@ -135,8 +138,9 @@ input#adicionar {
     display: inline-block;
     border-radius: 8px;
     margin-top: 50px;
-    
-    
+    text-align: center;
+    font-size: 1.5em;
+    color: #f76206;
  }
 input#adição {
     background-color: #f76206;
