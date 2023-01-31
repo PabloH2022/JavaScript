@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #7BBEDB;
+    height: 50px;
+    color: #d1dee3;
+
+
+
+}
+header, h1#titulo {
+    padding: 10px;
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.524);
+    font-family: 'Bebas Neue', cursive;
+    color:#E47632;
+}
+div#foto {
+    height: 640px;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+    
+}
+div#foto > h3 {
+    text-align: center;
+    padding: 10px;
+}
+div#foto > img#img {
+    margin-top: 20px;
+    
+}
+div#valorbilhete {
+    background-color: #E47632 ;
+    height: 60px;
+    margin-top: 30px;
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+div#valorbilhete > h1 {
+    padding: 0px;
+}
+div#local {
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color:#dedef45c ;
+    height: 80px;
+    width: 85vw;
+    border-color: black;
+}
+div#local > p {
+    padding: 24px;
+}
+div#data {
+    border-top: 2px solid rgba(195, 185, 185, 0.667);
+    margin-left: 10px;
+    background-color:#dedef45c ;
+    height: 80px;
+    width: 85vw;
+}
+div#data > p {
+    padding: 24px;
+}
+div#adicionar {
+    height: 500px;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.303);
+}
+div#adicionar > p {
+    text-align: center;
+    padding: 20px;
+}
+div#caixaop {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 150px;
+    width: 180px;
+    border: #E47632;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #E47632;
+    border-radius: 10px;
+    display: inline-block;
+}
+div#caixaop > h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: #E47632;
+    
+}
+input#adicionar {
+    background-color: #E47632;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+ }
+
+ div#mostrar > input {
+    margin-top: 30px;
+    display: inline-block;
+    
+ }
+ div#caixabilhete {
+    border: 2px solid #E47632;
+    height: 40px;
+    width: 200px;
+    display: inline-block;
+    
+    
+    
+ }
+
