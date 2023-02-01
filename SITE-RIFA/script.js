@@ -2,7 +2,7 @@ let res = window.document.getElementById('caixabilhete')
 let inicio = Number(res.value)
 let numero = 0
 let resultado = document.getElementById('resultado')
-let finalizar = document.getElementById('finalizar')
+let finalizar = document.getElementById('final')
 
 
 function mais() {
@@ -44,20 +44,25 @@ function adicionar100() {
 
 }
 
-
 var resul = document.addEventListener('click', function() {
-
-    
-    
 
     resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
     let soma = numero * 0.25
     resultado.innerHTML += ('Por: R$ '+soma)
     
 
-
-
 })
 
+function finalizarcompra() {
+    const modal = document.getElementById('formulario-modal')
+    modal.classList.add('abrir')
 
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == 'fechar' || e.target.id == 'formulario-modal') {
+            modal.classList.remove('abrir')
+        }
+
+    })
+    
+}
 

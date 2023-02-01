@@ -143,6 +143,7 @@ input#adicionar {
     font-size: 16px;
     border-radius: 7px;
     margin-bottom: 10px;
+    cursor: pointer;
  }
 
  div#mostrar > input {
@@ -173,12 +174,14 @@ input#adição {
     text-decoration: none;
     font-size: 16px;
     border-radius: 7px;
+    cursor: pointer;
     
     
 }
-div#resultado {
+
+section#final {
     color: rgb(126, 125, 125);
-    height: 80px;
+    height: 160px;
     width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -189,25 +192,157 @@ div#resultado {
     padding-left: 10px;
     padding-top: 10px;
 }
-
-div#finalizar {
-    background-color: rgb(24, 123, 210);
+div#resultado {
     color: rgb(126, 125, 125);
-    height: 80px;
-    width: 94vw;
+    height: 65px;
+    width: 90vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
-    border-radius: 0px 0px 10px 10px;
     
     display: block;
     padding-left: 10px;
     padding-top: 10px;
 }
 
+div#finalizar {
+    color: rgb(126, 125, 125);
+    height: 50px;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#finalizarcompra {
+    background-color: #3dae1b;
+    border: none;
+    color: white;
+    padding: 20px 130px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 7px;
+    cursor: pointer;
+    
+    
+}
+
+.formulario-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.859);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+
+}
+.modal {
+    width: 70vw;
+    min-width: 400px;
+    min-height: 450px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgba(251, 18, 18, 0.76);
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.header-modal {
+    border-bottom: 1px solid rgb(100, 99, 99);
+    padding: 0px;
+    margin: 10px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0.9em;
+}
+
+.body-modal {
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.body-modal > h3 {
+    color: gray;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.name {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    
+}
+div.telefone {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+input#nameusu {
+    width: 50vw;
+    padding: 10px;
+    border: none;
+}
+input#telusu, input#telusu01 {
+    margin-left: 10px;
+    width: 50vw;
+    padding: 10px;
+    border: none;
+}
+
+.material-symbols-outlined {
+    color: rgb(255, 100, 3); 
+}
+
+#efetuarcompra {
+    background-color: #f76206;
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 7px;
+    width: 70vw;
+    cursor: pointer;
+}
+
+
+
 footer {
     height: 100px;
     text-align: center;
-    border-top: 2px solid rgba(109, 109, 109, 0.355);
+    border-top: 2px solid rgba(255, 255, 255, 0.355);
     margin-top: 30px;
     background-color: white;
 
@@ -218,3 +353,21 @@ footer > p {
 
 }
 
+.formulario-modal.abrir {
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from {
+        opacity: 0;
+        transform: translate(0, -20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0,0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.4s;
+}
