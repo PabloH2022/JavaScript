@@ -14,11 +14,11 @@
 <body>
     <header>
         <h1 id="titulo">RifaDaSorte </h1>
-            <div id="pesq">
+            <div id="pesq" onclick="buscarnumero()">
                 
-                <p><span class="material-symbols-outlined">
+                <p><span id="search" class="material-symbols-outlined">
                     search
-                    </span>Buscar meus números</p>
+                </span> Buscar meus números</p>
             </div>
         
         
@@ -109,9 +109,30 @@
                                 </footer>
                         </section>
                     
-
                 </div>
-        </div>
+             </div>
+             <div id="pesquisar-modal">
+                <div id="numeros-modal">
+                    <header class="header-modal-pesquisar">
+                     <button class="fechar" id="fechar">x</button>
+                        <h1>Buscar meus números</h1>
+                    </header>
+                    <section class="body-modal-pesquisar">
+                        <div class="telefone">
+                            <label for="telusu"></label><span class="material-symbols-outlined">
+                                pixel_3_3xl_3a
+                                </span>
+                            <input type="tel" name="telusu" id="telusu" placeholder="Telefone com DDD" required min="8">
+
+                        </div>
+                        <div class="footer-modal" >
+                            <button id="buscar-numero">Buscar números</button>
+                        </div>
+
+                    </section>
+                </div>
+
+             </div>
     </main>
     <footer>
         <p>Termos e condições de uso - Política de privacidade</p>

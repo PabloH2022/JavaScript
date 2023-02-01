@@ -33,9 +33,16 @@ div#pesq {
 
 
 }
+
+span#search {
+    text-align: center;
+    margin-top: 8px;
+}
+
 div#pesq > p {
-    margin-top: 14px;
+    
     font-size: 0.9em;
+    text-align: center;
 }
 header, h1#titulo {
     padding: 10px;
@@ -376,5 +383,61 @@ footer > p {
 }
 
 .abrir .modal {
+    animation: abrirmodal 0.4s;
+}
+
+#pesquisar-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.859);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#numeros-modal {
+    width: 70vw;
+    min-width: 400px;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header-modal-pesquisar {
+    color: black;
+    font-size: 0.8em;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+.body-modal-pesquisar {
+    margin-top: 25px;
+}
+
+#buscar-numero {
+    background-color: #12b22a;
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 7px;
+    width: 70vw;
+    cursor: pointer;
+}
+
+#pesquisar-modal.abrir {
+    display: flex;
+}
+
+.abrir #numeros-modal {
     animation: abrirmodal 0.4s;
 }
