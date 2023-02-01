@@ -28,6 +28,7 @@ div#pesq {
     border-radius: 5px;
     width: 200px;
     background-color: white;
+    cursor: pointer;
     
 
 
@@ -181,7 +182,7 @@ input#adição {
 
 section#final {
     color: rgb(126, 125, 125);
-    height: 160px;
+    height: 150px;
     width: 94vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -194,7 +195,7 @@ section#final {
 }
 div#resultado {
     color: rgb(126, 125, 125);
-    height: 65px;
+    height: 50px;
     width: 90vw;
     background-color: rgb(255, 255, 255);
     margin: auto;
@@ -219,13 +220,14 @@ div#finalizar {
     background-color: #3dae1b;
     border: none;
     color: white;
-    padding: 20px 130px;
+    padding: 15px 130px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.1em;
     border-radius: 7px;
     cursor: pointer;
+    margin-bottom: 20px;
     
     
 }
@@ -264,14 +266,17 @@ div#finalizar {
     height: 30px;
     border-radius: 50%;
     border: 0;
-    background-color: rgba(251, 18, 18, 0.76);
+    background-color: rgba(46, 42, 42, 0.76);
     color: white;
     font-size: 21px;
     cursor: pointer;
 }
+.fechar:hover {
+    background-color: rgb(252, 53, 53);
+}
 
 .header-modal {
-    border-bottom: 1px solid rgb(100, 99, 99);
+    border-bottom: 1px solid rgb(106, 104, 104);
     padding: 0px;
     margin: 10px;
     color: black;
@@ -308,19 +313,21 @@ div.telefone {
     border: 1px solid black;
 }
 input#nameusu {
-    width: 50vw;
+    width: 65vw;
     padding: 10px;
-    border: none;
+    border: 0;
+    border-radius: 10px;
 }
 input#telusu, input#telusu01 {
     margin-left: 10px;
-    width: 50vw;
+    width: 65vw;
     padding: 10px;
-    border: none;
+    border: 0;
 }
 
 .material-symbols-outlined {
     color: rgb(255, 100, 3); 
+    cursor: pointer;
 }
 
 #efetuarcompra {

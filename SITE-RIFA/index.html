@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
         <h1 id="titulo">RifaDaSorte </h1>
             <div id="pesq">
-                <p>Buscar meus números</p>
+                
+                <p><span class="material-symbols-outlined">
+                    search
+                    </span>Buscar meus números</p>
             </div>
         
         
@@ -88,17 +92,17 @@
                                             person
                                             </span>
                                     </label>
-                                    <input type="text" name="nameusu" id="nameusu" placeholder="informe seu nome completo" minlength="15" required>
+                                    <input type="text" name="nameusu" id="nameusu" placeholder="informe seu nome completo" minlength="15" required autocomplete="name">
                                 </div>
                                 <div class="telefone">
                                     <label for="telusu"> <span class="material-symbols-outlined">
                                         phone_forwarded
-                                        </span><input type="tel" name="telusu" id="telusu" placeholder="Telefone com DDD" minlength="8" required></label>
+                                        </span><input type="tel" name="telusu" id="telusu" placeholder="Telefone com DDD" minlength="8" required autocomplete="tel"></label>
                                 </div>
                                 <div class="telefone">
                                     <label for="telusu01"><span class="material-symbols-outlined">
                                         pixel_3_3xl_3a
-                                        </span><input type="tel" name="telusu01" id="telusu01" placeholder="Repita seu telefone com DDD" minlength="8" required></label>
+                                        </span><input type="tel" name="telusu01" id="telusu01" placeholder="Repita seu telefone com DDD" minlength="8" required autocomplete="tel"></label>
                                 </div>
                                 <footer class="buttom-efetuarcompra">
                                     <button id="efetuarcompra">Efetuar compra</button>
