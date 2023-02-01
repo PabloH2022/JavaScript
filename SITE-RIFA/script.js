@@ -4,7 +4,6 @@ let numero = 0
 let resultado = document.getElementById('resultado')
 let finalizar = document.getElementById('final')
 
-
 function mais() {
     numero = numero + 1
     res.innerHTML = numero
@@ -76,4 +75,5 @@ function buscarnumero() {
         }
     })
 }
+
 
