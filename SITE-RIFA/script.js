@@ -5,12 +5,10 @@ let resultado = document.getElementById('resultado')
 const section = document.getElementById('final')
 
 
-
 function mais() {
     numero = numero + 1
     res.innerHTML = numero
     mostrardiv()
-    fixardiv()
 }
 function menos() {
     if(numero == 0) {
@@ -25,21 +23,25 @@ function menos() {
 function adicionar1() {
     numero = numero + 1
     res.innerHTML = numero
+    mostrardiv()
 
 }
 function adicionar30() {
      numero = numero + 30
      res.innerHTML = numero
+     mostrardiv()
     
 }
 function adicionar50() {
     numero = numero + 50
     res.innerHTML = numero
+    mostrardiv()
 
 }
 function adicionar100() {
     numero = numero + 100
     res.innerHTML = numero
+    mostrardiv()
     
     
 }
@@ -49,23 +51,21 @@ mostrardiv()
 function mostrardiv() {
     
 
-    if(section.style.display == 'none' ) {
-        section.style.display = 'block'
-    } else {
+    if(numero == 0 ) {
         section.style.display = 'none'
+    } else {
+        section.style.display = 'block'
+        
     }
 }
 
-function fixardiv() {
-    section.style.display = 'block'
-}
 
 function esconderdiv() {
     if(numero == 0) {
         section.style.display ='none'
     }
 }
-
+// - div section 
 var resul = document.addEventListener('click', function() {
 
 
