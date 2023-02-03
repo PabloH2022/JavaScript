@@ -10,6 +10,7 @@ function mais() {
     numero = numero + 1
     res.innerHTML = numero
     mostrardiv()
+    fixardiv()
 }
 function menos() {
     if(numero == 0) {
@@ -18,6 +19,7 @@ function menos() {
         numero = numero - 1
         res.innerHTML = numero
     } 
+    esconderdiv()
 
 }
 function adicionar1() {
@@ -43,7 +45,6 @@ function adicionar100() {
 }
 
 mostrardiv()
-// tentado fazer a div aparecer
 
 function mostrardiv() {
     
@@ -52,6 +53,16 @@ function mostrardiv() {
         section.style.display = 'block'
     } else {
         section.style.display = 'none'
+    }
+}
+
+function fixardiv() {
+    section.style.display = 'block'
+}
+
+function esconderdiv() {
+    if(numero == 0) {
+        section.style.display ='none'
     }
 }
 
