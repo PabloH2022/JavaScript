@@ -2,6 +2,7 @@ let res = window.document.getElementById('caixabilhete')
 let inicio = res.value
 let numero = 0
 let resultado = document.getElementById('resultado')
+const section = document.getElementById('final')
 
 
 
@@ -38,19 +39,21 @@ function adicionar100() {
     numero = numero + 100
     res.innerHTML = numero
     
+    
 }
 
+mostrardiv()
 // tentado fazer a div aparecer
 
-/*function mostrardiv() {
-    const section = document.getElementById('final')
+function mostrardiv() {
+    
 
-    if(res > '0' ) {
+    if(section.style.display == 'none' ) {
         section.style.display = 'block'
     } else {
         section.style.display = 'none'
     }
-}*/
+}
 
 var resul = document.addEventListener('click', function() {
 
