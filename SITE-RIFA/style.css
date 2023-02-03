@@ -218,8 +218,6 @@ div#finalizar {
     background-color: rgb(255, 255, 255);
     margin: auto;
     display: block;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 
 #finalizarcompra {
@@ -234,6 +232,8 @@ div#finalizar {
     border-radius: 7px;
     cursor: pointer;
     margin: 0px;
+    margin-left: 0px;
+    width: 90vw;
     
     
 }
@@ -346,7 +346,7 @@ input#telusu, input#telusu01 {
     display: inline-block;
     font-size: 1.1em;
     border-radius: 7px;
-    width: 70vw;
+    width: 87vw;
     cursor: pointer;
 }
 

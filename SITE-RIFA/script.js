@@ -1,16 +1,14 @@
 let res = window.document.getElementById('caixabilhete')
-let inicio = Number(res.value)
+let inicio = res.value
 let numero = 0
 let resultado = document.getElementById('resultado')
-let finalizar = document.getElementById('final')
+
+
 
 function mais() {
     numero = numero + 1
     res.innerHTML = numero
-    res.innerHTML = style.display = "block"
-   
-    
-
+    mostrardiv()
 }
 function menos() {
     if(numero == 0) {
@@ -18,8 +16,7 @@ function menos() {
     } else {
         numero = numero - 1
         res.innerHTML = numero
-    }  
-
+    } 
 
 }
 function adicionar1() {
@@ -40,10 +37,23 @@ function adicionar50() {
 function adicionar100() {
     numero = numero + 100
     res.innerHTML = numero
-
+    
 }
 
+// tentado fazer a div aparecer
+
+/*function mostrardiv() {
+    const section = document.getElementById('final')
+
+    if(res > '0' ) {
+        section.style.display = 'block'
+    } else {
+        section.style.display = 'none'
+    }
+}*/
+
 var resul = document.addEventListener('click', function() {
+
 
     resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
     let soma = numero * 0.25
@@ -75,5 +85,29 @@ function buscarnumero() {
         }
     })
 }
+
+
+// Banco de dados - LocalStorage
+
+const form = window.document.getElementById('formulario-modal')
+
+form.addEventListener('buttom', (e) => {
+    e.preventDefault
+
+    const nameInput = document.getElementById('nameusu')
+    const phoneInput = document.getElementById('telusu')
+
+    localStorage.setItem('name', nameInput.value)
+    localStorage.setItem('phone', phoneInput.value)
+
+    nameInput.value = ''
+    phoneInput.value = ''
+
+})
+
+
+
+
+
 
 
