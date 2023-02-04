@@ -109,7 +109,7 @@ div#data > p {
 }
 
 #ranking {
-    height: 450px;
+    height: 420px;
     width: 94vw;
     background-color: white;
     margin: auto;
@@ -186,6 +186,7 @@ div#adicionar {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.303);
     text-align: center;
     
+    
 }
 div#adicionar > p {
     font-size: 1.2em;
@@ -200,6 +201,7 @@ div#caixaop {
     border: 2px solid #f76206;
     border-radius: 10px;
     display: inline-block;
+    margin: 6px;
     
     
     

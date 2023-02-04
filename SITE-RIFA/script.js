@@ -105,6 +105,7 @@ function buscarnumero() {
 }
 
 
+
 // Banco de dados - LocalStorage
 
 
