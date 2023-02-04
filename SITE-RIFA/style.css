@@ -12,6 +12,7 @@
 }
 body {
     background-color: rgba(211, 211, 211, 0.447);
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -106,6 +107,75 @@ div#data {
 div#data > p {
     padding: 24px;
 }
+
+#ranking {
+    height: 450px;
+    width: 94vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.303);
+}
+#ranking > h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+#ranking > p {
+    text-align: center;
+    padding: 5px;
+}
+#ranking > #lugar {
+    height: 70px;
+    border: 1px solid rgba(94, 94, 94, 0.358);
+    width: 80vw;
+    margin: auto;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 32px;
+    display: inline-block;
+}
+
+#ranking > #lugar > p {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+#ranking > #lugar > #nome > #icon {
+    font-size: 2em;
+    margin-right: 0px;
+    margin: 0px; 
+    display: inline-block;
+
+}
+
+#ranking > #lugar > #nome {
+    display: inline-block;
+    width: 225px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+#ranking > #lugar > #coluna {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-top: 15px;
+    margin-left: 8px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
 div#adicionar {
     height: 470px;
     width: 94vw;
@@ -118,6 +188,7 @@ div#adicionar {
     
 }
 div#adicionar > p {
+    font-size: 1.2em;
     text-align: center;
     padding: 20px;
 }
