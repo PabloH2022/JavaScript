@@ -55,6 +55,15 @@ function mostrardiv() {
         section.style.display = 'none'
     } else {
         section.style.display = 'block'
+        var resul = document.addEventListener('click', function() { // - div section 
+
+
+            resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
+            let soma = numero * 0.25
+            resultado.innerHTML += ('Por: R$ '+soma)
+            
+        
+        })
         
     }
 }
@@ -65,16 +74,9 @@ function esconderdiv() {
         section.style.display ='none'
     }
 }
-// - div section 
-var resul = document.addEventListener('click', function() {
 
 
-    resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
-    let soma = numero * 0.25
-    resultado.innerHTML += ('Por: R$ '+soma)
-    
-
-})
+// DIV - MODAL FORMULARIO
 
 function finalizarcompra() {
     const modal = document.getElementById('formulario-modal')
@@ -88,6 +90,8 @@ function finalizarcompra() {
     })
     
 }
+
+// DIV MODAL PESQUISAR NUMERO
 
 function buscarnumero() {
     const modal = document.getElementById('pesquisar-modal')
@@ -103,21 +107,33 @@ function buscarnumero() {
 
 // Banco de dados - LocalStorage
 
-const form = window.document.getElementById('formulario-modal')
+
+/*const form = window.document.getElementById('formulario-modal')
 
 form.addEventListener('buttom', (e) => {
     e.preventDefault
 
     const nameInput = document.getElementById('nameusu')
-    const phoneInput = document.getElementById('telusu')
+    let phoneInput = document.getElementById('telusu')
+    
 
     localStorage.setItem('name', nameInput.value)
     localStorage.setItem('phone', phoneInput.value)
 
-    nameInput.value = ''
-    phoneInput.value = ''
+})*/
 
-})
+function efetuarcompra() {
+    localStorage.name = document.getElementById('nameusu').value
+    localStorage.phone = document.getElementById('telusu').value
+}
+
+document.getElementById('informações') = localStorage.name
+document.getElementById('informações') += localStorage.phone
+
+
+
+
+
 
 
 
