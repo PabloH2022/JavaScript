@@ -55,7 +55,7 @@ body {
 }
 
 #pix {
-    height: 400px;
+    height: 440px;
     width: 90vw;
     background-color: white;
     padding: 10px;
@@ -69,7 +69,7 @@ body {
 }
 
 #chave-pix {
-    height: 290px;
+    height: 330px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(57, 57, 57, 0.258);
     width: 90vw;
