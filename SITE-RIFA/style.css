@@ -154,16 +154,16 @@ div#data > p {
 
 #ranking > #lugar > #nome {
     display: inline-block;
-    width: 225px;
+    width: 210px;
     font-size: 0.8em;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #ranking > #lugar > #coluna {
     display: inline-block;
     font-size: 0.8em;
     margin-top: 15px;
-    margin-left: 8px;
+    
     
     
 }
