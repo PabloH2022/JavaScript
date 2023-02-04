@@ -129,11 +129,11 @@ div#data > p {
 #ranking > #lugar {
     height: 70px;
     border: 1px solid rgba(94, 94, 94, 0.358);
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     border-radius: 5px;
-    margin: 20px;
-    margin-left: 32px;
+    margin: 15px;
+    margin-left: 8px;
     display: inline-block;
 }
 
