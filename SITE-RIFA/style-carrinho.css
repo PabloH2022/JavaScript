@@ -25,12 +25,13 @@ body {
 #detalhes > h3 {
     padding: 20px;
 }
-#informações {
+#infdousuario {
     height: 110px;
     width: 90vw;
     border:1px solid lightgray;
     margin: auto;
     border-radius: 20px;
+    text-align: center;
 
 
 }

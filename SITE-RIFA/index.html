@@ -69,7 +69,7 @@
             </div>
             <div id="lugar">
                 <div id="nome">
-                    <p><p id="icon">🥉</p>João da silva Resende Costa</p>
+                    <p><p id="icon">🥉</p>Lucas Oliveira Rodrigues</p>
                 </div>
                 <div id="coluna">
                     <strong>
@@ -124,26 +124,28 @@
 
                         <section class="body-modal">
                             <h3>Preencher informações abaixo</h3>
+                            <div id="msgerror"></div>
+                            <div id="msgsucesso"></div>
                                 <div class="name">
                                     <label for="nameusu">
-                                        <span class="material-symbols-outlined">
+                                        <span id="iconName" class="material-symbols-outlined">
                                             person
                                             </span>
                                     </label>
                                     <input type="text" name="nameusu" id="nameusu" placeholder="informe seu nome completo" minlength="10" required autocomplete="name">
                                 </div>
                                 <div class="telefone">
-                                    <label for="telusu"> <span class="material-symbols-outlined">
+                                    <label for="telusu"> <span id="iconTel" class="material-symbols-outlined">
                                         phone_forwarded
                                         </span><input type="tel" name="telusu" id="telusu" placeholder="Telefone com DDD" minlength="8" required autocomplete="tel"></label>
                                 </div>
-                                <div class="telefone">
-                                    <label for="telusu01"><span class="material-symbols-outlined">
+                                <div class="confirmetelefone">
+                                    <label for="telusu01"><span id="iconConfirmTel" class="material-symbols-outlined">
                                         pixel_3_3xl_3a
                                         </span><input type="tel" name="telusu01" id="telusu01" placeholder="Repita seu telefone com DDD" minlength="8" required autocomplete="tel"></label>
                                 </div>
                                 <footer class="buttom-efetuarcompra">
-                                    <a href="carrinho.html"><button id="efetuarcompra">Efetuar compra</button></a>
+                                    <button id="efetuarcompra" onclick="efetuarcompra()">Efetuar compra</button>
                                 </footer>
                         </section>
                     

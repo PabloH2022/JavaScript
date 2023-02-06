@@ -379,6 +379,28 @@ div#finalizar {
     margin-bottom: 50px;
 }
 
+#msgerror {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 20px;
+
+}
+#msgsucesso {
+    text-align: center;
+    color: #143d00;
+    background-color: #98cf90;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 20px;
+
+
+}
+
 div.name {
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -394,17 +416,27 @@ div.telefone {
     border-radius: 10px;
     border: 1px solid black;
 }
-input#nameusu {
+
+div.confirmetelefone {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.name input#nameusu {
     width: 65vw;
     padding: 10px;
     border: 0;
-    border-radius: 10px;
+    outline: none;
+    
 }
-input#telusu, input#telusu01 {
+.telefone input#telusu, input#telusu01 {
     margin-left: 10px;
     width: 65vw;
     padding: 10px;
     border: 0;
+    outline: none;
 }
 
 .material-symbols-outlined {
