@@ -100,12 +100,12 @@ function buscarnumero() {
     modal.addEventListener('click', (e) => {
         if(e.target.id == 'fechar' || e.target.id == 'pesquisar-modal') {
             modal.classList.remove('abrir')
+            
         }
     })
 }
 
-
-// Validação de dados 
+// Validação de dados do formúlario
 
 let nome = document.getElementById('nameusu')
 let iconName = document.getElementById('iconName')
@@ -181,17 +181,19 @@ function efetuarcompra() {
 
     if(validNome && validPhone && validConfirmphone) {
 
+        // Salvando dados do usuario
+
         let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
         listaUser.push(
             {
                 nomecad: nome.value,
                 phonecad: phone.value
-                
+
             }
         )
 
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        localStorage.setItem('listaUser', JSON.stringify(listaUser)) // Convertendo de string para objeto array
 
 
         msgsucesso.setAttribute('style', 'display: block')
@@ -202,7 +204,7 @@ function efetuarcompra() {
             
         setTimeout(() => { // derlay de 0,3s para abrir a pagina do href
             window.location.href = "carrinho.html"
-        }, 3000);
+        }, 2000);
         
 
 
