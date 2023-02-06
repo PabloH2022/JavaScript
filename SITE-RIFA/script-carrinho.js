@@ -8,4 +8,3 @@ let totbilhe = document.getElementById('total-bilhetes')
 
 
 
-

@@ -175,21 +175,19 @@ confirmphone.addEventListener('keyup', (e) => {
 
 })
 
-
 function efetuarcompra() {
 
     
 
     if(validNome && validPhone && validConfirmphone) {
 
-        // Salvando informações do usúario no LocalStorage
-
         let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
         listaUser.push(
             {
-                namecad: nome.value,
+                nomecad: nome.value,
                 phonecad: phone.value
+                
             }
         )
 
@@ -208,11 +206,9 @@ function efetuarcompra() {
         
 
 
-
-
     } else {
         msgerror.setAttribute('style', 'display: block')
-        msgerror.innerHTML = "Campo vazio encontrado! Preencha todos os campos..."
+        msgerror.innerHTML = "Campo vazio encontrado! Preencha todos os campos abaixo..."
         msgsucesso.setAttribute('style', 'display: none')
         msgsucesso.innerHTML = ""
         
