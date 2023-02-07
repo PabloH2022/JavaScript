@@ -35,6 +35,14 @@ body {
 
 
 }
+
+#iconName, #iconTel {
+    text-align: left;
+    font-size: 1em;
+    
+}
+
+
 #total-bilhetes {
     height: 100px;
     border: 1px solid lightgray;

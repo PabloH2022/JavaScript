@@ -177,21 +177,17 @@ confirmphone.addEventListener('keyup', (e) => {
 
 function efetuarcompra() {
 
-    
 
     if(validNome && validPhone && validConfirmphone) {
 
         // Salvando dados do usuario
 
-        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        const listaUser =  {
+            nomecad: nome.value,
+            phonecad: phone.value,
+            bilhete: numero
 
-        listaUser.push(
-            {
-                nomecad: nome.value,
-                phonecad: phone.value
-
-            }
-        )
+        }
 
         localStorage.setItem('listaUser', JSON.stringify(listaUser)) // Convertendo de string para objeto array
 
