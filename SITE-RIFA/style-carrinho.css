@@ -31,14 +31,20 @@ body {
     border:1px solid lightgray;
     margin: auto;
     border-radius: 20px;
-    text-align: center;
+    
 
 
 }
 
 #iconName, #iconTel {
+    
+    margin-top: 20px;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.7em;
+    color: rgb(98, 97, 97);
+   margin-left: 10px;
+   
+
     
 }
 
@@ -50,7 +56,18 @@ body {
     margin: auto;
     margin-top:20px;
     border-radius: 10px;
+    text-align: left;
+    
 }
+
+#total-bilhetes  p {
+    margin-left: 15px;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+
+
 
 #numeros-selecionados {
     height: 200px;
