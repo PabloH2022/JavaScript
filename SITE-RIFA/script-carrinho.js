@@ -10,7 +10,7 @@ let respo = JSON.parse(listausuario)
 
 console.log(respo)
 
-iconName.innerHTML += (respo.nomecad)
+iconName.innerHTML += (respo.nomecad + '<br>')
 iconTel.innerHTML += (respo.phonecad)
 
 let soma = (respo.bilhete) * 0.25
