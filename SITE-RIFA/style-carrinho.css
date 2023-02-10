@@ -12,7 +12,7 @@ body {
 }
 
 #detalhes {
-    height: 550px;
+    height: auto;
     width: 94vw;
     background-color: white;
     margin: auto;
@@ -43,6 +43,7 @@ body {
     font-size: 0.7em;
     color: rgb(98, 97, 97);
    margin-left: 10px;
+   display: flex;
    
 
     
@@ -62,7 +63,7 @@ body {
 
 #total-bilhetes  p {
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
     line-height: 1.5em;
 }
 
@@ -70,7 +71,7 @@ body {
 
 
 #numeros-selecionados {
-    height: 200px;
+    height: 230px;
     background-color: white;
     border: 1px solid lightgray;
     width: 90vw;
@@ -78,6 +79,48 @@ body {
     margin-top:20px;
     border-radius: 10px;
     
+}
+#numeros-selecionados > h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#numbersorteios {
+    display: flow-root;
+    height: auto;
+}
+
+ul#numbers {
+    display: flow-root;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: none;
+    
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    float: left;
+    width: 33%;
+    padding: 0 4px;
+    margin-bottom: 10px;
+    background-color: #77ede7;
+    margin: 5px;
+    width: 85px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 #pix {
