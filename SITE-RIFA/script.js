@@ -4,6 +4,27 @@ let numero = 0
 let resultado = document.getElementById('resultado')
 const section = document.getElementById('final')
 
+// Validação de dados do formúlario
+
+let nome = document.getElementById('nameusu')
+let iconName = document.getElementById('iconName')
+let divName = document.querySelector('.name')
+let validNome = false
+
+let phone = document.getElementById('telusu')
+let iconphone = document.getElementById('iconTel')
+let divphone = document.querySelector('.telefone')
+let validPhone = false
+
+let confirmphone = document.getElementById('telusu01')
+let iconConfirmphone = document.getElementById('iconConfirmTel')
+let divconfirmphone = document.querySelector('.confirmetelefone')
+let validConfirmphone = false
+
+let msgerror = document.getElementById('msgerror')
+let msgsucesso = document.getElementById('msgsucesso')
+
+let buscarphone = document.getElementById('buscarnum')
 
 function mais() {
     numero = numero + 1
@@ -105,25 +126,7 @@ function buscarnumero() {
     })
 }
 
-// Validação de dados do formúlario
 
-let nome = document.getElementById('nameusu')
-let iconName = document.getElementById('iconName')
-let divName = document.querySelector('.name')
-let validNome = false
-
-let phone = document.getElementById('telusu')
-let iconphone = document.getElementById('iconTel')
-let divphone = document.querySelector('.telefone')
-let validPhone = false
-
-let confirmphone = document.getElementById('telusu01')
-let iconConfirmphone = document.getElementById('iconConfirmTel')
-let divconfirmphone = document.querySelector('.confirmetelefone')
-let validConfirmphone = false
-
-let msgerror = document.getElementById('msgerror')
-let msgsucesso = document.getElementById('msgsucesso')
 
 nome.addEventListener('keyup', () => {
     if(nome.value.length <= 9) {
@@ -231,14 +234,25 @@ form.addEventListener('buttom', (e) => {
 
 }
 
+let divnumerosselecionados = document.getElementById('numeros-selecionados01')
 
+function buscarbilhetes() {
 
+    if(buscarphone.value.length == 0) {
+        divnumerosselecionados.style.display = 'none'
+    } else {
+        divnumerosselecionados.style.display = 'block'
+    }
+    let buscarreservados = localStorage.getItem('listaUser')
 
+    let buscar = JSON.parse(buscarreservados)
+    console.log('cheguei', buscar.reservados)
+    let buscarnumeros = document.getElementById('buscarnumeros')
+    for(var i = 0; i < buscar.reservados.length; i++){
 
+        let item = document.createElement('li');
+        item.appendChild(document.createTextNode(buscar.reservados[i]));
+        buscarnumeros.appendChild(item);
+    }
 
-
-
-
-
-
-
+}

@@ -162,11 +162,17 @@
                             <label for="telusu"></label><span class="material-symbols-outlined">
                                 pixel_3_3xl_3a
                                 </span>
-                            <input type="tel" name="telusu" id="telusu" placeholder="Telefone com DDD" required min="8">
+                            <input type="tel" name="buscarnum" id="buscarnum" placeholder="Telefone com DDD" required min="8" autocomplete="tel">
+
+                        </div>
+                        <div id="numeros-selecionados01">
+                            <ul id="buscarnumeros">
+                                
+                            </ul>
 
                         </div>
                         <div class="footer-modal" >
-                            <button id="buscar-numero">Buscar números</button>
+                            <button id="buscar-numero" onclick="buscarbilhetes()">Buscar números</button>
                         </div>
 
                     </section>
