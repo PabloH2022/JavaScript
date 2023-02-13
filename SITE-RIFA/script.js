@@ -26,6 +26,26 @@ let msgsucesso = document.getElementById('msgsucesso')
 
 let buscarphone = document.getElementById('buscarnum')
 
+// Carrossel 
+
+let count = 1
+document.getElementById('radio1').checked = true
+
+function NextImg() {
+    count++
+    if(count > 4) {
+        count = 1
+    }
+    document.getElementById('radio'+count).checked = true
+
+}
+
+setInterval(function(){
+    NextImg()
+}, 3000)
+
+
+
 function mais() {
     numero = numero + 1
     res.innerHTML = numero
@@ -242,17 +262,20 @@ function buscarbilhetes() {
         divnumerosselecionados.style.display = 'none'
     } else {
         divnumerosselecionados.style.display = 'block'
+
     }
+
     let buscarreservados = localStorage.getItem('listaUser')
 
-    let buscar = JSON.parse(buscarreservados)
-    console.log('cheguei', buscar.reservados)
-    let buscarnumeros = document.getElementById('buscarnumeros')
-    for(var i = 0; i < buscar.reservados.length; i++){
+        let buscar = JSON.parse(buscarreservados)
+        console.log('cheguei', buscar.reservados)
+        let buscarnumeros = document.getElementById('buscarnumeros')
+        for(var i = 0; i < buscar.reservados.length; i++){
 
         let item = document.createElement('li');
         item.appendChild(document.createTextNode(buscar.reservados[i]));
         buscarnumeros.appendChild(item);
     }
+    
 
 }
