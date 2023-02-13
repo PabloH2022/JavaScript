@@ -136,7 +136,7 @@ div#foto {
 }
 
 #navigation-auto div {
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -148,13 +148,13 @@ div#foto {
     position: absolute;
     display: flex;
     width: 439px;
-    margin-top: 258px;
+    margin-top: 259px;
     justify-content: center;
 
 }
 
 #navigation-auto div:not(:last-child) {
-    margin-right: 42px;
+    margin-right: 43px;
 }
 
 #radio1:checked ~ #navigation-auto #auto-btn1{

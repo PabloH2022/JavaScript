@@ -13,9 +13,9 @@ console.log(respo)
 iconName.innerHTML += (respo.nomecad+ '<br>')
 iconTel.innerHTML += (respo.phonecad)
 
-let soma = (respo.bilhete) * 0.25
+let soma = (respo.bilhete) * 0.95
 
-totbilhe.innerHTML += (respo.bilhete + ' Número cada: R$ 0,25 <br/> Por: ' +soma)
+totbilhe.innerHTML += (respo.bilhete + ' Número cada: R$ 0,95 <br/> Por: ' +soma)
 
 // gerar numeros aleartorios
 

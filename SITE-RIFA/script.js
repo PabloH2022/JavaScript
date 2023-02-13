@@ -99,8 +99,8 @@ function mostrardiv() {
         var resul = document.addEventListener('click', function() { // - div section 
 
 
-            resultado.innerHTML = (numero+ ' Números cada: R$0,25 <br>')
-            let soma = numero * 0.25
+            resultado.innerHTML = (numero+ ' Números cada: R$0.95 <br>')
+            let soma = numero * 0.95
             resultado.innerHTML += ('Por: R$ '+soma)
             
         
