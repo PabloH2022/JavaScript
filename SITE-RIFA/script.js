@@ -68,19 +68,19 @@ function adicionar1() {
 
 }
 function adicionar30() {
-     numero = numero + 30
+     numero = numero + 10
      res.innerHTML = numero
      mostrardiv()
     
 }
 function adicionar50() {
-    numero = numero + 50
+    numero = numero + 30
     res.innerHTML = numero
     mostrardiv()
 
 }
 function adicionar100() {
-    numero = numero + 100
+    numero = numero + 50
     res.innerHTML = numero
     mostrardiv()
     
@@ -96,12 +96,12 @@ function mostrardiv() {
         section.style.display = 'none'
     } else {
         section.style.display = 'block'
-        var resul = document.addEventListener('click', function() { // - div section 
+        var resul = document.addEventListener('click', function() { 
 
 
             resultado.innerHTML = (numero+ ' Números cada: R$0.95 <br>')
             let soma = numero * 0.95
-            resultado.innerHTML += ('Por: R$ '+soma)
+            resultado.innerHTML += ('Por: R$ '+(soma).toFixed(2))
             
         
         })

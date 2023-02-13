@@ -15,7 +15,7 @@ iconTel.innerHTML += (respo.phonecad)
 
 let soma = (respo.bilhete) * 0.95
 
-totbilhe.innerHTML += (respo.bilhete + ' Número cada: R$ 0,95 <br/> Por: ' +soma)
+totbilhe.innerHTML += (respo.bilhete + ' Número cada: R$ 0,95 <br/> Total: R$ ' +(soma).toFixed(2))
 
 // gerar numeros aleartorios
 
