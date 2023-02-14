@@ -4,18 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de tarefas</title>
+    <title>Controle de Despesas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>entradas</h1>
-        <h1>Saídas</h1>
-    </header>
-    <main>
-        <div id="input">
+        <div id="saldoatual">
+            <h2>Saldo Atual</h2>
+            <h1>R$ 3922,00</h1>
 
         </div>
+        <div id="receitasedespesas">
+            <div id="entrada">
+                <h1>Receitas</h1>
+                <h2>R$ 45,00</h2>
+            </div>
+            <div id="saida">
+                <h1>Despesas</h1>
+                <h2>R$ -150,00</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="transações">
+            <h2>Transações</h2>
+
+            <div id="Name"><p>Salario mês 03</p>
+            <div id="valor">+ R$3425,00 </div> <div id="colorgreen"></div></div>
+
+            <div id="Name"><p>Plano de Saúde</p>
+                <div id="valor"> - R$ 425,00 </div> <div id="colorred"></div>
+            </div>
+        </section>
+        <section id="adicionartransação">
+            <h2>Adicionar Transação</h2>
+            <div id="adicionar">
+                <label for="inputName">Nome <br></label>
+                <input type="text" name="inputName" id="inputName" placeholder="Nome da Transação">
+
+                <label for="inputValor">Valor<br></label>
+                <p>(Negativo - Despesas, Positivo + Receitas) </p>
+                <input type="number" name="inputValor" id="inputValor" placeholder="valor da Transação">
+                <button id="adicionar-btn">Adicionar</button>
+            </div>
+        </section>
 
     </main>
 </body>
