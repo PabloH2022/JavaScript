@@ -25,6 +25,10 @@ header {
 
 
 }
+
+header, a {
+    text-decoration: none;
+}
 div#pesq {
     text-align: center;
     margin-left: 60px;
