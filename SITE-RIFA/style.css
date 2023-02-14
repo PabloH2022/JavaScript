@@ -66,7 +66,7 @@ div#foto {
 
 #slider {
     margin: 0 auto;
-    width: 439px;
+    width: 380px;
     overflow: hidden;
     
 
@@ -91,13 +91,14 @@ div#foto {
 }
 
 #slide, img {
-    width: 439px;
+    width: 380px;
+    border-radius: 8px;
     
 }
 
 #manual-navigation {
     position: absolute;
-    width: 439px;
+    width: 380px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -147,8 +148,8 @@ div#foto {
 #navigation-auto {
     position: absolute;
     display: flex;
-    width: 439px;
-    margin-top: 259px;
+    width: 380px;
+    margin-top: 220px;
     justify-content: center;
 
 }
