@@ -197,6 +197,7 @@ div#valorbilhete {
     color: #ffffff;
     text-align: center;
     padding: 5px;
+    cursor: pointer;
 }
 div#valorbilhete > h1 {
     padding: 0px;
