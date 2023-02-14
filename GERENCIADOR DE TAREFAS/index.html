@@ -11,17 +11,17 @@
     <header>
         <div id="saldoatual">
             <h2>Saldo Atual</h2>
-            <h1>R$ 3922,00</h1>
+            <h1 id="atual">R$ 3922,00</h1>
 
         </div>
         <div id="receitasedespesas">
             <div id="entrada">
                 <h1>Receitas</h1>
-                <h2>R$ 45,00</h2>
+                <h2 id="receitas">R$ 45,00</h2>
             </div>
             <div id="saida">
                 <h1>Despesas</h1>
-                <h2>R$ -150,00</h2>
+                <h2 id="despesas">R$ -150,00</h2>
             </div>
         </div>
     </header>
@@ -44,11 +44,12 @@
 
                 <label for="inputValor">Valor<br></label>
                 <p>(Negativo - Despesas, Positivo + Receitas) </p>
-                <input type="number" name="inputValor" id="inputValor" placeholder="valor da Transação">
-                <button id="adicionar-btn">Adicionar</button>
+                <input type="number" name="inputValor" id="inputValor" placeholder="Valor da Transação">
+                <button id="adicionar-btn" onclick="adicionar()">Adicionar</button>
             </div>
         </section>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
