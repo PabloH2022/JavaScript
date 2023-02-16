@@ -92,7 +92,7 @@ header h1 {
 
 #transações {
     background-color: rgba(174, 174, 174, 0.654);
-    height: 200px;
+    height: auto;
     border-radius: 10px;
     width: 90vw;
     justify-content: center;
@@ -108,15 +108,26 @@ header h1 {
     font-size: 1.3em;
 }
 
-#transações #Name {
+#transações  li#criarelemento {
     height: 40px;
     background-color: white;
     margin-bottom: 10px;
     border-radius: 3px;
     display: flex;
+    
+    
 }
 
-#transações p {
+li {
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+#transações #nomedatransa {
+
     padding: 10px;
     font-size: 0.8em;
 }

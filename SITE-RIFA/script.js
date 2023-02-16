@@ -268,7 +268,7 @@ function buscarbilhetes() {
     let buscarreservados = localStorage.getItem('listaUser')
 
         let buscar = JSON.parse(buscarreservados)
-        console.log('cheguei', buscar.reservados)
+
         let buscarnumeros = document.getElementById('buscarnumeros')
         for(var i = 0; i < buscar.reservados.length; i++){
 

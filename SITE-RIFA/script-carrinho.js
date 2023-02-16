@@ -26,19 +26,6 @@ let cont = 0
 
 function gerador() {
 
-    /*for(let c = 0; c < respo.bilhete; c++) {
-        let x = Math.floor(Math.random() * 99999) + 1
-        let numberexiste = resul.find((e) => {
-            e==x
-        }) 
-
-        if(!numberexiste) {
-            resul.push(x)
-        } else {
-            cont++
-        }
-}*/
-
     while(resul.length < respo.bilhete) {
         let x = Math.floor(Math.random() * 99999) + 1
         let numberexiste = resul.find((e) => {
@@ -50,7 +37,8 @@ function gerador() {
         }
     }
     return resul
-}
+    }
+        
 
 
 function resultado(){
@@ -64,7 +52,7 @@ function resultado(){
         lista.appendChild(item);
     }
 
-   let reservados = localStorage.getItem('listaUser') 
+   let reservados = localStorage.getItem('listaUser')
 
    let resultado = JSON.parse(reservados)
 
